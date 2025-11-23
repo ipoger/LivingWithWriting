@@ -846,7 +846,7 @@ i.iconfont {
 }
 :root {
   --color-mode: "light";
-  --body-bg-color: #EEEEEE;
+  --body-bg-color: #F2F2E4;
   --board-bg-color: #fff;
   --text-color: #3c4858;
   --sec-text-color: #718096;
@@ -873,7 +873,7 @@ i.iconfont {
     --color-mode: "dark";
   }
   :root:not([data-user-color-scheme]) {
-    --body-bg-color: #1a1a1a;
+    --body-bg-color: #3B403E;
     --board-bg-color: #252d38;
     --text-color: #c4c6c9;
     --sec-text-color: #a7a9ad;
@@ -927,7 +927,7 @@ i.iconfont {
 }
 @media not print {
   [data-user-color-scheme="dark"] {
-    --body-bg-color: #1a1a1a;
+    --body-bg-color: #3B403E;
     --board-bg-color: #252d38;
     --text-color: #c4c6c9;
     --sec-text-color: #a7a9ad;
