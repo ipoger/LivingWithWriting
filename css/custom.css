@@ -1,0 +1,59 @@
+/* ============================================================
+   Fluid 主题定制 CSS - 实心卡片版 (Solid Card)
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   1. 亮色模式 (Light Mode)
+   ------------------------------------------------------------ */
+:root {
+  /* 【卡片背景】纯白实心，最干净的阅读体验 */
+  --board-bg-color: #ffffff;
+
+  /* 【卡片阴影】增加阴影，制造悬浮的“卡片感” */
+  --board-shadow: 0 12px 40px rgba(0, 0, 0, 0.05);
+  
+  /* 【取消毛玻璃】回归清晰 */
+  --board-backdrop-filter: none;
+
+  /* 【文字颜色】保留你想要的纯黑配置 */
+  --text-color: #000000;
+  --sec-text-color: #333333;
+}
+
+/* ------------------------------------------------------------
+   2. 暗色模式 (Dark Mode)
+   ------------------------------------------------------------ */
+[data-user-color-scheme="dark"] {
+  /* 【卡片背景】深灰实心，与纯黑背景区分开 */
+  --board-bg-color: #1e1e1e !important;
+  
+  /* 【网页背景】纯黑 */
+  --body-bg-color: #121212 !important; 
+
+  /* 【文字颜色】保留纯白配置 */
+  --text-color: #ffffff !important;
+  --sec-text-color: #aaaaaa !important;
+
+  /* 【卡片阴影】暗色模式下稍微深一点的阴影 */
+  --board-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* ------------------------------------------------------------
+   3. 细节修正
+   ------------------------------------------------------------ */
+/* 修复：确保文章区域背景跟随卡片颜色，而不是透明 */
+.markdown-body, #board {
+  background-color: var(--board-bg-color) !important;
+  background: var(--board-bg-color) !important;
+}
+
+/* 修复代码块背景：给代码块加一点点底色，防止太突兀 */
+.markdown-body pre, .markdown-body .highlight {
+  background-color: rgba(0, 0, 0, 0.06) !important;
+}
+
+/* 暗色模式下的代码块底色 */
+[data-user-color-scheme="dark"] .markdown-body pre, 
+[data-user-color-scheme="dark"] .markdown-body .highlight {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
