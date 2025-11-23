@@ -4,31 +4,12 @@
   
   
   <entry>
-    <title></title>
-    <link href="/posts/fluid%E5%86%99%E4%BD%9C%E5%B7%A5%E5%85%B7.html"/>
-    <url>/posts/fluid%E5%86%99%E4%BD%9C%E5%B7%A5%E5%85%B7.html</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>我的旅行日记</title>
+    <title>开博记</title>
     <link href="/posts/%E5%BC%80%E5%8D%9A%E8%AE%B0.html"/>
     <url>/posts/%E5%BC%80%E5%8D%9A%E8%AE%B0.html</url>
     
-    <content type="html"><![CDATA[<p>今天天气真好，我去爬山了…</p>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>我深怕自己本非美玉，故而不敢加以刻苦琢磨，却又半信自己是块美玉，故又不肯庸庸碌碌，与瓦砾为伍。</p><p style="text-align: right">—— 中岛敦</p></blockquote><!-- 这里是注释，Hexo 也能识别，不会显示在网页上 --><p>在这里，恭喜自己在这几天中终于寻得半日闲，将博客搭了起来。开设博客的缘由是发现自己的某些想法似乎拥有值得记录的价值，同样也是为了满足自己的文字梦，让各位见笑。<br>以下是博客包含的内容与在下的其他想法出口：</p><h2 id="多余的话"><a href="#多余的话" class="headerlink" title="多余的话"></a>多余的话</h2><ul><li>有关于生活中漂浮着，不肯离去的小小想法。</li><li>有值得纪念的一些事情。</li><li>有似乎不同与其他人的看法。</li></ul><h2 id="要紧的事"><a href="#要紧的事" class="headerlink" title="要紧的事"></a>要紧的事</h2><ul><li>有关于CS的一些个人知识分享，同样也用来鞭策自己学习。</li><li>有课程的一些笔记。</li></ul><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ul><li>小宇宙《出洋相》<ul><li>与莫老师一起。</li><li>两个闲人的闲谈。</li></ul></li></ul>]]></content>
     
-    
-    <categories>
-      
-      <category>日记</category>
-      
-    </categories>
     
     
   </entry>
