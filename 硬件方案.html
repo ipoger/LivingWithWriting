@@ -19,17 +19,21 @@
   <meta name="author" content="Principia">
   <meta name="keywords" content="">
   
-    <meta property="og:type" content="website">
-<meta property="og:title" content="归档">
-<meta property="og:url" content="https://www.ipogermay.cn/archives/index.html">
+    <meta name="description" content="连接方式为了适应不同场景需要，如身边没有手机，或者手机蓝牙不方便，并且考虑到小孩的操作不便，我们进行了三种连接方式的设计：  BLE连接：这种连接方式通过手机的蓝牙连接ESP32主控板，后者受到命令之后通过WIFI将命令输入到游戏终端。 NFC连接：这种连接方式通过我们的NFC模块接受NFC标签信息，通过不同的标签信息打开对应的游戏关卡。 姿态控制连接：这种连接方式通过六轴传感器的参数对游戏终端进">
+<meta property="og:type" content="website">
+<meta property="og:title" content="page.title">
+<meta property="og:url" content="https://www.ipogermay.cn/%E7%A1%AC%E4%BB%B6%E6%96%B9%E6%A1%88.html">
 <meta property="og:site_name" content="多余的话">
+<meta property="og:description" content="连接方式为了适应不同场景需要，如身边没有手机，或者手机蓝牙不方便，并且考虑到小孩的操作不便，我们进行了三种连接方式的设计：  BLE连接：这种连接方式通过手机的蓝牙连接ESP32主控板，后者受到命令之后通过WIFI将命令输入到游戏终端。 NFC连接：这种连接方式通过我们的NFC模块接受NFC标签信息，通过不同的标签信息打开对应的游戏关卡。 姿态控制连接：这种连接方式通过六轴传感器的参数对游戏终端进">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-11-30T08:50:06.936Z">
+<meta property="article:modified_time" content="2025-11-30T08:50:06.936Z">
 <meta property="article:author" content="Principia">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>归档 - 多余的话</title>
+  <title>page.title - 多余的话</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -175,13 +179,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/website_bg/archive_bg.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="归档"></span>
+            <span id="subtitle" data-typed-text="page.title"></span>
           
         </div>
 
@@ -208,29 +212,55 @@
               <div class="col-12 col-md-10 m-auto">
                 
 
-<div class="list-group">
-  <p class="h4">共计 2 篇文章</p>
-  <hr>
-  
-  
-    
-      
-      <p class="h5">2025</p>
-    
-    <a href="/posts/%E6%B2%A1%E6%9C%89%E5%B0%BD%E5%A4%B4%E7%9A%84%E5%9C%B0%E6%96%B9.html" class="list-group-item list-group-item-action">
-      <time>12-01</time>
-      <div class="list-group-item-title">没有尽头的地方</div>
-    </a>
-  
-    
-    <a href="/posts/%E5%BC%80%E5%8D%9A%E8%AE%B0.html" class="list-group-item list-group-item-action">
-      <time>11-23</time>
-      <div class="list-group-item-title">开博记</div>
-    </a>
-  
-</div>
+<article class="page-content">
+  <h1 id="连接方式"><a href="#连接方式" class="headerlink" title="连接方式"></a>连接方式</h1><p>为了适应不同场景需要，如身边没有手机，或者手机蓝牙不方便，并且考虑到小孩的操作不便，我们进行了三种连接方式的设计：</p>
+<ul>
+<li>BLE连接：这种连接方式通过手机的蓝牙连接ESP32主控板，后者受到命令之后通过WIFI将命令输入到游戏终端。</li>
+<li>NFC连接：这种连接方式通过我们的NFC模块接受NFC标签信息，通过不同的标签信息打开对应的游戏关卡。</li>
+<li>姿态控制连接：这种连接方式通过六轴传感器的参数对游戏终端进行控制，用户的对应动作会被检测，ESP主控板发出对应指令到游戏终端。</li>
+</ul>
+<h4 id="BLE连接"><a href="#BLE连接" class="headerlink" title="BLE连接"></a>BLE连接</h4><ul>
+<li>使用XIAO esp32主控板自带的蓝牙芯片进行连接，进行数据传输。</li>
+</ul>
+<h4 id="NFC连接"><a href="#NFC连接" class="headerlink" title="NFC连接"></a>NFC连接</h4><ul>
+<li>通过NFC模块检测对应标签信息。</li>
+<li>读取到不同的NFC标签触发不同的命令。</li>
+<li>命令通过ESP32板子发出，经过WIFI发送至电脑终端。</li>
+</ul>
+<h4 id="姿态控制"><a href="#姿态控制" class="headerlink" title="姿态控制"></a>姿态控制</h4><ul>
+<li>录入相应的动作，比如向右转头并回正，记录此时的传感器数据。</li>
+<li>将相应的动作作为触发信号来映射到对应的指令上面。</li>
+<li>使得儿童做出相应动作之后即触发相应指令到游戏终端并交由后者进行处理。</li>
+</ul>
+<h1 id="姿态检测"><a href="#姿态检测" class="headerlink" title="姿态检测"></a>姿态检测</h1><p>为了对游戏中小孩的不规范动作进行提醒，我们通过传感器的参数进行检测，从而反应出儿童姿态。</p>
+<p>设置阈值：如果相应的参数超出阈值即发出警告。</p>
+<h1 id="眼动追踪"><a href="#眼动追踪" class="headerlink" title="眼动追踪"></a>眼动追踪</h1><p>通过摄像头，我们对瞳孔位置进行追踪，从而实时检测出儿童注视位置</p>
+<ul>
+<li>预处理：<ol>
+<li>将RGB三通道图像分离。</li>
+<li>利用算法提取R和B通道中的最大亮度值，因为红镜片透红光、蓝镜片透蓝光，通过融合，我们可以从光学上“消除”镜片的遮挡，让镜片变透明。</li>
+<li>使用 CLAHE 算法对融合后的图像进行局部对比度拉伸，暴力增强暗部细节，从而在低光照和深色镜片后精准提取出黑色的瞳孔特征。</li>
+</ol>
+</li>
+<li>特征提取：<ol>
+<li>利用深度学习模型，定位虹膜中心和眼眶轮廓。</li>
+</ol>
+</li>
+<li>数据解析：<ol>
+<li>建立相对坐标系，使得眼动数据独立于头部位置，这样做的好处是：只要眼球相对于眼眶位置不变，读数就不变。</li>
+</ol>
+</li>
+<li>滤波：<ol>
+<li>使用一欧元滤波进行滤波，解决抖动和延迟的问题。</li>
+</ol>
+</li>
+</ul>
+<h1 id="AI检测"><a href="#AI检测" class="headerlink" title="AI检测"></a>AI检测</h1><p>使用Teachable Machine快速部署工具训练了轻量级的CNN，使其进行分类，将佩戴红蓝眼镜和未佩戴红蓝眼镜的情况进行分类，检测儿童是否佩戴眼镜进行游戏。</p>
 
 
+  
+
+</article>
 
 
 
