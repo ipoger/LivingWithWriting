@@ -19,21 +19,21 @@
   <meta name="author" content="Principia">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Fluid 主题写作工具箱这里记录了 Fluid 主题特有的花哨功能，写文章时可以随时查阅。  1. 提示块 (Note)用来高亮一段信息，支持 info, success, warning, danger, primary。              提示信息这里写普通的提示内容。                          成功&#x2F;推荐这里写成功运行的代码或推荐内容。">
+    <meta name="description" content="硬件架构硬件端作为系统的感知触角，基于 Seeed Studio XIAO ESP32S3 高性能微控制器构建，具备极高的集成度与低功耗特性。 1. 姿态解算 6轴IMU传感器，运用 互补滤波算法 与 重力矢量解算 ，在硬件端直接完成姿态记录。  实现了 20Hz 高频 UDP 遥测，配合 PC 端的 OneEuroFilter 及 自适应死区 算法，基本消除了传感器的零点漂移与高频噪声，提供稳定">
 <meta property="og:type" content="website">
-<meta property="og:title" content="写作工具箱">
-<meta property="og:url" content="https://www.ipogermay.cn/tools/index.html">
+<meta property="og:title" content="page.title">
+<meta property="og:url" content="https://www.ipogermay.cn/%E6%80%BB%E7%BB%93.html">
 <meta property="og:site_name" content="多余的话">
-<meta property="og:description" content="Fluid 主题写作工具箱这里记录了 Fluid 主题特有的花哨功能，写文章时可以随时查阅。  1. 提示块 (Note)用来高亮一段信息，支持 info, success, warning, danger, primary。              提示信息这里写普通的提示内容。                          成功&#x2F;推荐这里写成功运行的代码或推荐内容。">
+<meta property="og:description" content="硬件架构硬件端作为系统的感知触角，基于 Seeed Studio XIAO ESP32S3 高性能微控制器构建，具备极高的集成度与低功耗特性。 1. 姿态解算 6轴IMU传感器，运用 互补滤波算法 与 重力矢量解算 ，在硬件端直接完成姿态记录。  实现了 20Hz 高频 UDP 遥测，配合 PC 端的 OneEuroFilter 及 自适应死区 算法，基本消除了传感器的零点漂移与高频噪声，提供稳定">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-11-23T14:00:00.000Z">
-<meta property="article:modified_time" content="2025-12-05T14:12:30.613Z">
+<meta property="article:published_time" content="2025-12-04T14:53:47.688Z">
+<meta property="article:modified_time" content="2025-12-04T14:53:47.688Z">
 <meta property="article:author" content="Principia">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>写作工具箱 - 多余的话</title>
+  <title>page.title - 多余的话</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -185,7 +185,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="写作工具箱"></span>
+            <span id="subtitle" data-typed-text="page.title"></span>
           
         </div>
 
@@ -213,50 +213,66 @@
                 
 
 <article class="page-content">
-  <h1 id="Fluid-主题写作工具箱"><a href="#Fluid-主题写作工具箱" class="headerlink" title="Fluid 主题写作工具箱"></a>Fluid 主题写作工具箱</h1><p>这里记录了 Fluid 主题特有的花哨功能，写文章时可以随时查阅。</p>
-<hr>
-<h2 id="1-提示块-Note"><a href="#1-提示块-Note" class="headerlink" title="1. 提示块 (Note)"></a>1. 提示块 (Note)</h2><p>用来高亮一段信息，支持 <code>info</code>, <code>success</code>, <code>warning</code>, <code>danger</code>, <code>primary</code>。</p>
-<div class="note note-info">
-            <p><strong>提示信息</strong><br>这里写普通的提示内容。</p>
-          </div>
-
-<div class="note note-success">
-            <p><strong>成功&#x2F;推荐</strong><br>这里写成功运行的代码或推荐内容。</p>
-          </div>
-
-<div class="note note-warning">
-            <p><strong>注意&#x2F;警告</strong><br>这里写需要读者注意的事项。</p>
-          </div>
-
-<div class="note note-danger">
-            <p><strong>危险&#x2F;错误</strong><br>这里写绝对不要做的事情。</p>
-          </div>
-
-<hr>
-<h2 id="2-行内标签-Label"><a href="#2-行内标签-Label" class="headerlink" title="2. 行内标签 (Label)"></a>2. 行内标签 (Label)</h2><p>用来在行文中 <span class="label label-primary">高亮</span> 某个词。</p>
-<ul>
-<li>颜色：<span class="label label-default">Default</span> <span class="label label-primary">Primary</span> <span class="label label-success">Success</span> <span class="label label-warning">Warning</span> <span class="label label-danger">Danger</span></li>
+  <h1 id="硬件架构"><a href="#硬件架构" class="headerlink" title="硬件架构"></a>硬件架构</h1><p>硬件端作为系统的感知触角，基于 <strong>Seeed Studio XIAO ESP32S3</strong> 高性能微控制器构建，具备极高的集成度与低功耗特性。</p>
+<h2 id="1-姿态解算"><a href="#1-姿态解算" class="headerlink" title="1. 姿态解算"></a>1. 姿态解算</h2><ul>
+<li><p>6轴IMU传感器，运用 <strong>互补滤波算法</strong> 与 <strong>重力矢量解算</strong> ，在硬件端直接完成姿态记录。</p>
+</li>
+<li><p>实现了 <strong>20Hz 高频 UDP 遥测</strong>，配合 PC 端的 <strong>OneEuroFilter</strong> 及 <strong>自适应死区</strong> 算法，基本消除了传感器的零点漂移与高频噪声，提供稳定的头部姿态控制。</p>
+</li>
+<li><p><strong>医学价值</strong>：精准监测患儿训练时的头位（Head Position），防止因姿态代偿（如歪头视物）导致的斜视并发症，确保视轴矫正的有效性。</p>
+</li>
 </ul>
-<hr>
-<h2 id="3-勾选列表-Checkbox"><a href="#3-勾选列表-Checkbox" class="headerlink" title="3. 勾选列表 (Checkbox)"></a>3. 勾选列表 (Checkbox)</h2><p>用来做 To-Do List。</p>
-<ul>
-<li><input checked="" disabled="" type="checkbox"> 已完成的任务</li>
-<li><input disabled="" type="checkbox"> 待办任务 A</li>
-<li><input disabled="" type="checkbox"> 待办任务 B</li>
+<h2 id="2-双模无线通信"><a href="#2-双模无线通信" class="headerlink" title="2. 双模无线通信"></a>2. 双模无线通信</h2><ul>
+<li>构建了 <strong>BLE (低功耗蓝牙)</strong> 与 <strong>WiFi (TCP&#x2F;UDP)并发</strong> 的混合通信链路，既保证了移动端的便捷指令下发，又确保了海量传感器数据的低延迟传输。</li>
 </ul>
-<hr>
-<h2 id="4-折叠块-Fold"><a href="#4-折叠块-Fold" class="headerlink" title="4. 折叠块 (Fold)"></a>4. 折叠块 (Fold)</h2><p>内容太长？藏起来！</p>
+<h2 id="3-无感身份认证"><a href="#3-无感身份认证" class="headerlink" title="3. 无感身份认证"></a>3. 无感身份认证</h2><ul>
+<li><p>集成 <strong>NFC 射频识别 (RC522)</strong> 模块，通过实体玩具实现“刷卡即启动”的零门槛登录体验，可以识别不同的标签信息从而能够向游戏端发送不同指令。</p>
+</li>
+<li><p><strong>医学价值</strong>：不同标签对应不同的训练处方（如不同频率的刺激、不同的游戏难度），实现“一人一策”的精准治疗。</p>
+</li>
+</ul>
+<h1 id="软件算法"><a href="#软件算法" class="headerlink" title="软件算法"></a>软件算法</h1><p>游戏端软件作为系统的“大脑”，集成了深度学习与大语言模型，实现了复杂的感知与交互逻辑。</p>
+<h2 id="1-光谱融合眼动追踪"><a href="#1-光谱融合眼动追踪" class="headerlink" title="1. 光谱融合眼动追踪"></a>1. <strong>光谱融合眼动追踪</strong></h2><ul>
+<li><p>传统算法或者主流模型，如yolov8-pose等，无法穿透红蓝眼镜的滤光片，导致瞳孔特征丢失。</p>
+</li>
+<li><p>针对红蓝眼镜滤光导致瞳孔特征丢失的光学难题，首创 <strong>“红蓝通道最大值融合 + CLAHE 自适应直方图均衡 + 伽马校正”</strong> 的图像预处理管线。</p>
+<ul>
+<li>红蓝通道最大值融合：红镜片允许红光通过（R通道高亮），蓝镜片允许蓝光通过（B通道高亮），而瞳孔作为黑色素聚集区，在R、G、B通道均为暗色。这样我们就减小了红蓝眼镜的弱透光性对瞳孔定位的影响。</li>
+<li>伽马校正：画面的整体进光量不足，我们可以对其进行矫正，使图片中的明暗对比更加明显，从而对瞳孔进行定位。</li>
+<li>CLAHE：为了解决局部光照不均的问题，在现实场景中，光源位置常常不固定，CLAHE 能确保无论光线从哪个角度射入，眼球边缘的梯度特征都能被锐化增强，这样我们能够更好地定位瞳孔。</li>
+</ul>
+</li>
+<li><p><strong>医学价值</strong>：实现了在佩戴治疗镜片下的视线方向估计与瞳孔识别，确保患儿在训练过程中保持<strong>中心注视</strong>，而非旁中心注视。同时眼动数据被游戏端记录，后续可以生成相应的眼动报告。</p>
+</li>
+</ul>
+<h2 id="2-依从性智能监护"><a href="#2-依从性智能监护" class="headerlink" title="2. 依从性智能监护"></a>2. 依从性智能监护</h2><ul>
+<li>部署基于 <strong>轻量级卷积神经网络 (CNN)</strong> 的迁移学习模型，实时推断用户是否规范佩戴红蓝眼镜。</li>
+<li>引入 <strong>置信度门控</strong> 与 <strong>时序投票机制</strong>，确保了检测结果在动态环境下的稳定性，预测结果不会反复跳动。<ul>
+<li>置信度门控：即只有当模型对分类结果的概率预测超过设定阈值（如 0.8）时，才采信结果。这里的设计可以防止系统误报干扰游戏治疗过程。</li>
+<li>时序投票机制：引入一个滑动时间窗口。最终判定状态取决于窗口内的主流结果（例如：若 20 帧里有 18 帧是“未佩戴”，才触发报警）。这样可以排除眨眼，快速转头之类的影响。</li>
+</ul>
+</li>
+</ul>
+<h2 id="3-生成式语音交互"><a href="#3-生成式语音交互" class="headerlink" title="3. 生成式语音交互"></a>3. 生成式语音交互</h2><ul>
+<li><p>接入 <strong>百度文心一言</strong> 大模型与 <strong>高自然度语音合成</strong> 引擎。</p>
+</li>
+<li><p>实现了具备“智能保底机制”的语音助手，能够进行医学知识问答，并根据用户的姿态（如歪头、距离过近）进行人性化的语音干预提醒。</p>
+</li>
+<li><p><strong>智能保底机制</strong>：设计了基于规则与大模型的混合系统，在网络波动时也能提供基础引导，确保系统高可用性。</p>
+</li>
+<li><p><strong>医学价值</strong>：</p>
+<ul>
+<li><strong>行为干预</strong>：根据姿态解算结果，实时对“歪头”、“距离过近”进行语音纠正，预防姿态错误。</li>
+<li><strong>心理抚慰</strong>：利用 LLM 的共情能力，为枯燥的重复性训练提供情感陪伴与鼓励，提升患儿的治疗依从性。</li>
+</ul>
+</li>
+</ul>
+<h1 id="硬软交互"><a href="#硬软交互" class="headerlink" title="硬软交互"></a>硬软交互</h1><p>系统突破了传统的键鼠操作，构建了符合儿童直觉的操作模式：</p>
+<ul>
+<li><strong>体感控制</strong>：通过头部微动作（如双击歪头）触发指令，基于有限状态机的手势识别算法确保了操作的精准防误触。</li>
+<li><strong>视觉反馈回路 (Visual Feedback Loop)</strong>：实时的屏幕 AR 辅助显示（准星、警告层），建立了“感知-反馈-矫正”的闭环训练机制。</li>
+</ul>
 
-    <div class="fold">
-      <div class="fold-title fold-info collapsed" data-toggle="collapse" href="#collapse-21802e31" role="button" aria-expanded="false" aria-controls="collapse-21802e31">
-        <div class="fold-arrow">▶</div>点击查看隐藏代码
-      </div>
-      <div class="fold-collapse collapse" id="collapse-21802e31">
-        <div class="fold-content">
-          <pre><code class="language-python">print(&quot;Hello World&quot;)</code></pre>
-        </div>
-      </div>
-    </div>
 
   
 
